@@ -5,7 +5,7 @@ export default {
   controller
 };
 
-controller.$inject = ['imageService']
+controller.$inject = ['imageService'];
 
 function controller(imageService) {
   this.choices = [
@@ -31,7 +31,7 @@ function controller(imageService) {
   this.remove = image => {
     imageService.remove(image)
       .then(removed => {
-        let theIndex = this.images.indexOf(image);
+        let theIndex = this.images.indexOf(removed);
         if (theIndex > -1) this.images.splice(theIndex, 1);
       });
   };

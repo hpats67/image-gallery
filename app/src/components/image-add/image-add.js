@@ -1,5 +1,5 @@
-import template from './imageAdd.html';
-import styles from './imageAdd.css';
+import template from './image-add.html';
+import styles from './image-add.css';
 
 export default {
   template,
