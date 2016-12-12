@@ -5,6 +5,6 @@ import './main.css';
 
 const app = angular.module('image', [components, services]);
 
-const dev = 'http://localhost:8080/api';
+const dev = 'http://localhost:3500/api';
 
 app.value('apiUrl', dev);

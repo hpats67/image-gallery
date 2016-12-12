@@ -2,7 +2,7 @@
   "name": "imagegallery",
   "version": "1.0.0",
   "description": "using angular to choose image displays",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "karma start",
     "start": "webpack-dev-server --inline",
@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "angular": "^1.5.9",
-    "camelcase": "^4.0.0"
+    "camelcase": "^4.0.0",
+    "webpack": "^1.14.0"
   }
 }

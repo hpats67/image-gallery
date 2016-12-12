@@ -24,7 +24,7 @@ function controller() {
     this.add({
       title: this.title,
       url: this.url,
-      description: this.descrition
+      description: this.description
     });
     this.reset();
   };
