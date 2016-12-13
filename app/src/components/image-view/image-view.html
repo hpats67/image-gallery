@@ -1,0 +1,8 @@
+<section>
+  <div class="view" ng-repeat="image in $ctrl.images">
+    <p>Name: {{image.title}}</p>
+    <p><a href="{{image.url}}" target="_blank">Link: {{image.title}}</a></p>
+    <p>Description: {{image.description}}</p>
+    <button class="primary" ng-click="$ctrl.trash(image)"><h2>Delete</h2></button>
+  </div>
+</section>
