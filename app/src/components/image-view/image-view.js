@@ -4,14 +4,16 @@ import styles from './image-view.scss';
 export default {
   template, 
   bindings: {
-    images: '=',
-    remove: '<'
+    remove: '<',
+    images: '='
   },
   controller
 };
 
 function controller () {
+
   this.styles = styles;
+
   this.trash = (image) => {
     this.remove(image);
   };

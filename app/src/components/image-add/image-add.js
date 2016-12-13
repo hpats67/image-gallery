@@ -9,7 +9,6 @@ export default {
 };
 
 function controller() {
-  this.styles = styles;
 
   this.reset = () => {
     this.title = '';
