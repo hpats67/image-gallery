@@ -1,7 +1,7 @@
 import angular from 'angular';
-import components from './src/components';
-import services from './src/services';
-import './main.css';
+import './scss/main.scss';
+import components from './components';
+import services from './services';
 
 const app = angular.module('image', [components, services]);
 

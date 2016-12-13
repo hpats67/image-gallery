@@ -1,3 +1,5 @@
-<section class="{{$ctrl.styles.full}}" ng-repeat="image in $ctrl.images">
-  <img ng-src="{{image.url}}" alt="{{image.description}}">
+<section>
+  <div class="gallery" ng-repeat="image in $ctrl.images">
+    <img ng-src="{{image.url}}" alt="{{image.description}}">
+  </div>
 </section>
