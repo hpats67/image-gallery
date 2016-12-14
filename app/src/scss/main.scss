@@ -31,9 +31,16 @@ footer {
   background-color: $main;
 }
 
+footer h3 {
+  color: $highlight;
+  -webkit-text-stroke: 1px $dark-shade;
+}
+
 body {
   width: 80%;
   margin: auto;
+  text-align: center;
+  background-color: $light-shade;
 }
 
 .nav-bar li {
@@ -43,5 +50,5 @@ body {
 }
 
 html {
-  background-color: $light-shade;
+  background-color: $dark-shade;
 }
