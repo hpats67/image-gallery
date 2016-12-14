@@ -5,7 +5,7 @@
   </ul>
 </div>
 <body> 
-  <ui-view images="$ctrl.images" add="$ctrl.add" delete="$ctrl.remove()" name="main"></ui-view>
+  <ui-view name="main"></ui-view>
   <div>
     <label>Viewing Choice</label>
     <select ng-model="$ctrl.myChoice" ng-options="choice.name for choice in $ctrl.choices"></select>
