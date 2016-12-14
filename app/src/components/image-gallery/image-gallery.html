@@ -1,5 +1,7 @@
 <section>
-  <div class="gallery" ng-repeat="image in $ctrl.images">
-    <img ng-src="{{image.url}}" alt="{{image.description}}">
+  <div class="gallery">
+    <button ng-click="$ctrl.previous()" class="change"><img ng-src="{{$ctrl.images[$ctrl.p].url}}"></button>
+    <img ng-src="{{$ctrl.images[$ctrl.c].url}}" alt="{{image.description}}">
+    <button ng-click="$ctrl.next()" class="change"><img ng-src="{{$ctrl.images[$ctrl.n].url}}"></button>
   </div>
 </section>

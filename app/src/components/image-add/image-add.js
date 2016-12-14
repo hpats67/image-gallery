@@ -1,4 +1,5 @@
 import template from './image-add.html';
+import styles from './image-add.scss';
 
 export default {
   template,
@@ -8,9 +9,11 @@ export default {
   controller
 };
 
-controller.$inject = ['imageService'];
+controller.$inject = ['imageService', '$state'];
 
-function controller(imageService) {
+function controller(imageService, $state) {
+
+  this.styles = styles;
 
   this.reset = () => {
     this.title = '';
@@ -28,5 +31,6 @@ function controller(imageService) {
     })
       .then(saved => this.images.push(saved));
     this.reset();
+    $state.go('images');
   };
 }
