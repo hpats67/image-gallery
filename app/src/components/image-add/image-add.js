@@ -8,7 +8,9 @@ export default {
   controller
 };
 
-function controller() {
+controller.$inject = ['imageService'];
+
+function controller(imageService) {
 
   this.reset = () => {
     this.title = '';
@@ -19,11 +21,12 @@ function controller() {
   this.reset();
 
   this.addImage = () => {
-    this.add({
+    imageService.add({
       title: this.title,
       url: this.url,
       description: this.description
-    });
+    })
+      .then(saved => this.images.push(saved));
     this.reset();
   };
 }

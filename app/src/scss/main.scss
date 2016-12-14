@@ -6,8 +6,6 @@ h1 {
   font-family: fantasy;
   font-size: 10rem;
   margin: 0;
-
-  
 }
 
 h2, h3, h4 {
@@ -23,7 +21,7 @@ p {
 header {
   background: url(http://www.freetattoodesigns.org/images/lower-back-tribal-dragon.gif) no-repeat;
   background-size: 100% 100%;
-  min-height: 400px;
+  min-height: 250px;
   background-color: $main;
   text-align: center;
   margin: auto;
@@ -36,4 +34,10 @@ footer {
 body {
   width: 80%;
   margin: auto;
+}
+
+.nav-bar li {
+  display: inline-block;
+  list-style:none;
+  padding-right: 5rem;
 }

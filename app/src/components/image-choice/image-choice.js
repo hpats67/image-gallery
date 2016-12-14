@@ -23,17 +23,4 @@ function controller(imageService) {
       this.images = images;
     });
 
-  this.add = image => {
-    imageService.add(image)
-      .then(saved => this.images.push(saved));
-  };
-
-  this.remove = image => {
-    imageService.remove(image)
-      .then(removed => {
-        let theIndex = this.images.indexOf(removed);
-        if (theIndex > -1) this.images.splice(theIndex, 1);
-      });
-  };
-
 }
