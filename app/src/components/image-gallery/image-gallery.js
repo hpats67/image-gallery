@@ -13,7 +13,6 @@ function controller () {
   this.styles = styles;
 
   this.c = 0;
-
   this.n = 1;
   this.p = -1;
 

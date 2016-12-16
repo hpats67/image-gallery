@@ -10,9 +10,9 @@ export default {
   controller
 };
 
-controller.$inject = ['imageService'];
+controller.$inject = ['imageService', '$state'];
 
-function controller (imageService) {
+function controller (imageService, $state) {
 
   this.styles = styles;
 
@@ -29,6 +29,8 @@ function controller (imageService) {
       .then(removed => {
         let theIndex = this.images.indexOf(removed);
         if (theIndex > -1) this.images.splice(theIndex, 1);
+        imageService.get();
+        $state.go('images');
       });
   };
 }

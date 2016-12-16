@@ -9,9 +9,9 @@ export default {
   controller
 };
 
-controller.$inject = ['imageService', '$state'];
+controller.$inject = ['imageService'];
 
-function controller(imageService, $state) {
+function controller(imageService) {
 
   this.styles = styles;
 
@@ -31,6 +31,6 @@ function controller(imageService, $state) {
     })
       .then(saved => this.images.push(saved));
     this.reset();
-    $state.go('images');
+
   };
 }
