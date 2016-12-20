@@ -1,0 +1,6 @@
+<section>
+  <div class="view" ng-repeat="album in $ctrl.albums">
+    <p>Name: {{album.name}}</p>
+    <button class="primary" ng-click="$ctrl.trash(album)"><h2>Delete</h2></button>
+  </div>
+</section>
