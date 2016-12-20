@@ -6,7 +6,7 @@ const requiredString = {type: String, required: true};
 const schema = new Schema({
 
   name: requiredString,
-  type: requiredString,
+  type: requiredString
 
 });
 

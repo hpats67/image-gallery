@@ -1,0 +1,37 @@
+.nav-bar ul {
+  position: relative;
+  top: 100%;
+  z-index: 10;
+}
+
+.nav-bar li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 21%;
+  list-style:none;
+  padding-right: 5rem;
+}
+
+.ul-hover li {
+  display: none;
+};
+
+ul :hover {
+  color: black;
+};
+
+ul h2 {
+  margin-bottom: 5px;
+}
+
+ul li:hover > .ul-hover li {
+  display: block;
+  position: relative;
+  right: -10%;
+}
+
+.ul-hover h3 {
+  margin: 0;
+}
+

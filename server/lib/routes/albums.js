@@ -1,12 +1,27 @@
 const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser').json();
-const Album = require('../models/album');
+const Album = require('../models/albums');
+const Image = require('../models/image');
 
 router  
   .get('/', (req, res, next) => {
     Album.find({}).lean()
     .then(albums => res.send(albums))
+    .catch(next);
+  })
+
+  .get('/:id', (req, res, next) => {
+    const album = req.params.id;
+
+    Promise.all([
+      Album.findById(album).lean(),
+      Image.find({album}).lean()
+    ])
+    .then(([crew, pirates]) => {
+      crew.pirates = pirates;
+      res.send(album);
+    })
     .catch(next);
   })
 

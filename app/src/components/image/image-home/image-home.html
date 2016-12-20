@@ -1,0 +1,26 @@
+<div class="nav-bar">
+  <ul>
+    <li><h2>View Gallery</h2>
+      <ul class="ul-hover">
+        <li><a ui-sref="images.galleryAll"><h3>View All</h3></a></li>
+        <li><a ui-sref="images.gallery.albums"><h3>View Albums</h3></a></li>
+      </ul>
+    </li>
+    <li><a ui-sref="images.add"><h2>Add</h2></a>
+      <ul class="ul-hover">
+        <li><a ui-sref="images.add.all"><h3>Add Image</h3></a></li>
+        <li><a ui-sref="images.add.albums"><h3>Add Album</h3></a></li>
+      </ul>
+    </li>
+    <li><a ui-sref="images.delete"><h2>Delete</h2></a>
+      <ul class="ul-hover">
+        <li><a ui-sref="images.add.all"><h3>Delete Image</h3></a></li>
+        <li><a ui-sref="images.add.albums"><h3>Delete Album</h3></a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<body> 
+  <ui-view name="main"></ui-view>
+
+</body>
