@@ -9,7 +9,7 @@ export default {
   controller
 };
 
-controller.$inject = ['imageService'];
+controller.$inject = ['imageService', 'albumService'];
 
 function controller(imageService) {
 

@@ -21,11 +21,11 @@ export default function routes($stateProvider, $urlRouterProvider) {
     }
   })
   .state({
-    name: 'images.galleryAll',
-    url: '/gallery/all',
+    name: 'images.galleryAlbum',
+    url: '/gallery/album',
     views: {
       main:{
-        component: 'imageChoice'
+        component: 'albumChoice'
       }
     }
   })
@@ -39,24 +39,29 @@ export default function routes($stateProvider, $urlRouterProvider) {
     }
   })
   .state({
-    name: 'images.addImage',
-    url: '/add/image',
+    name: 'images.addAlbum',
+    url: '/add/album',
     views: {
       main:{
-        component: 'imageAdd'
+        component: 'albumAdd'
       }
     }
   })
   .state({
-    name: 'images.delete',
-    url: '/delete',
-  })
-  .state({
-    name: 'images.delete.image',
+    name: 'images.deleteImage',
     url: '/delete/image',
     views: {
       main:{
         component: 'imageDelete'
+      }
+    }
+  })
+  .state({
+    name: 'images.deleteAlbum',
+    url: '/delete/album',
+    views: {
+      main:{
+        component: 'albumDelete'
       }
     }
   })
