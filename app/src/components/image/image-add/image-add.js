@@ -10,9 +10,9 @@ export default {
   controller
 };
 
-controller.$inject = ['imageService', 'albumService'];
+controller.$inject = ['imageService', 'albumService', '$state'];
 
-function controller(imageService, albumService) {
+function controller(imageService, albumService, $state) {
 
   this.styles = styles;
 

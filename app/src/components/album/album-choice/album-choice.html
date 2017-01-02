@@ -1,8 +1,12 @@
   <div>
     <label>Available Albums</label>
-    <select ng-="$ctrl.myChoice" ng-options="choice.name for choice in $ctrl.choices"></select>
+    <input type="radio" ng-change"$ctrl.getAll()">All Images
+    <form action="albumForm"  ng-repeat="album in $ctrl.albums">
+      <input type="radio"  ng-value="$ctrl.album._id" ng-change="$ctrl.albumChange()">
+        <h2>Album Name:</h2>
+        <h3>{{$ctrl.album.name}}</h3>
+        <h2>Album Description:</h2>
+        <h3>{{$ctrl.album.type}}</h3>
+    </form>
 
-    <image-view ng-if="$ctrl.myChoice.value === 'view'" images="$ctrl.images"></image-view>
-    <image-gallery ng-if="$ctrl.myChoice.value === 'gallery'" images="$ctrl.images"></image-gallery>
-    <image-thumbnail ng-if="$ctrl.myChoice.value === 'thumbnail'" images="$ctrl.images"></image-thumbnail>
-  </div>
+  <image-choice images="$ctrl.images"></image-choice>
