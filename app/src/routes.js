@@ -9,25 +9,7 @@ export default function routes($stateProvider, $urlRouterProvider) {
   .state({
     name: 'images',
     url: '/images',
-    component: 'imageChoice'
-  })
-  .state({
-    name: 'images.add',
-    url: '/add',
-    views: {
-      main:{
-        component: 'imageAdd'
-      }
-    }
-  })
-  .state({
-    name: 'images.delete',
-    url: '/delete',
-    views: {
-      main:{
-        component: 'imageDelete'
-      }
-    }
+    component: 'image'
   })
   .state({
     name: 'about',

@@ -1,10 +1,4 @@
-<div class="nav-bar">
-  <ul>
-    <li><a ui-sref="images.add"><h2>Add Image</h2></a></li>
-    <li><a ui-sref="images.delete"><h2>Delete Image</h2></a></li>
-  </ul>
-</div>
-<body> 
+<section> 
   <ui-view name="main"></ui-view>
   <div>
     <label>Viewing Choice</label>
@@ -15,4 +9,4 @@
     <image-thumbnail ng-if="$ctrl.myChoice.value === 'thumbnail'" images="$ctrl.images"></image-thumbnail>
   </div>
 
-</body>
+</section>
