@@ -43,6 +43,11 @@ body {
   background-color: $light-shade;
 }
 
+.add-div {
+  display: inline-block;
+  clear: left;
+}
+
 .nav-bar li {
   display: inline-block;
   list-style:none;
