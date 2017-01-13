@@ -13,6 +13,9 @@ controller.$inject = ['albumService', 'imageService'];
 
 function controller (albumService, imageService) {
 
+  this.images = [];
+  this.albumChoices = 'albums[0].name';
+
   this.allImages = () => {
     imageService.get()
       .then(images => {

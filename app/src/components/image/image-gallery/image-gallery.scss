@@ -16,6 +16,9 @@
 }
 
 .gallery button.change {
+  background: none;
+  box-shadow: none;
+  min-width: 0;
   padding: 0;
   margin: 0;
   vertical-align: top;

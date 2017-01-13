@@ -15,6 +15,6 @@ function controller() {
     {name: 'Text View', value: 'view'}
   ];
 
-  this.myChoice = this.choices[2];
+  this.myChoice = this.choices[1];
 
 }
