@@ -14,9 +14,9 @@ function controller(albumService){
 
   this.trash = (album) => {
     albumService.remove(album)
-      .then(removed => {
-        let theIndex = this.albums.indexOf(removed);
-        if (theIndex > -1) this.albums.splice(theIndex, 1);
+      .then(() => {
+        albumService.get()
+          .then(albums => this.albums = albums);
       });
   };
 }
