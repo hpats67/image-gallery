@@ -4,7 +4,6 @@
   "description": "using angular to choose image displays",
   "main": "main.js",
   "scripts": {
-    "test": "karma start",
     "start": "webpack-dev-server --inline",
     "build": "webpack"
   },
