@@ -4,7 +4,7 @@ export default {
   template, 
   controller, 
   bindings: {
-    albums: '='
+    albums: '<'
   }
 };
 
@@ -24,7 +24,7 @@ function controller(albumService) {
     albumService.add({
       name: this.name,
       type: this.type,
-      description: this.description
+      description: this.description,
     })
       .then(saved => this.albums.push(saved));
     this.reset();

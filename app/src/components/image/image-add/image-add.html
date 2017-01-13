@@ -12,6 +12,12 @@
     <label><h3>Description:</h3></label>
     <input ng-model="$ctrl.description">
   </div>
+  <div class="add-div">
+    <select 
+      ng-model="$ctrl.selected" 
+      ng-options="album._id as album.name for album in $ctrl.albums">
+    </select>
+  </div>
   <button class="primary" ng-click="$ctrl.addImage()"><h2>Add</h2></button>
 
 </section>
