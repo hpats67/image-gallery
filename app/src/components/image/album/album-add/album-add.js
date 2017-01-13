@@ -22,7 +22,7 @@ function controller(albumService) {
 
   this.addAlbum = () => {
     albumService.add({
-      title: this.name,
+      name: this.name,
       type: this.type,
       description: this.description
     })
