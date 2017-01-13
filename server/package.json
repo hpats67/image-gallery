@@ -3,14 +3,10 @@
   "version": "1.0.0",
   "description": "basic express server",
   "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha ./test",
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "start": "nodemon server.js"
+    "pretest": "eslint *.js",
+    "test": "mocha --timeout 5000",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
