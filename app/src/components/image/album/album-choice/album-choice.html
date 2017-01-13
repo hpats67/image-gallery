@@ -4,7 +4,7 @@
   <span ng-repeat="album in $ctrl.albums">
     <input 
       ng-model="$ctrl.albums"
-      ng-change="ctrl.updateAlbum"
+      ng-change="ctrl.updateAlbum(album)"
       name="album"
       ng-value="album"
       type="radio">

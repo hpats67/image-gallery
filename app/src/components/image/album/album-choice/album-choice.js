@@ -20,5 +20,12 @@ function controller (albumService, imageService) {
       });
   };
 
+  this.updateAlbum = (album) => {
+    albumService.getImages(album)
+      .then(album =>{
+        this.images = album.images;
+      });
+  };
+
   
 }
