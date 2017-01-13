@@ -7,6 +7,7 @@ const schema = new Schema({
 
   name: requiredString,
   type: requiredString,
+  description: requiredString
 
 });
 

@@ -1,0 +1,38 @@
+<section>
+  <div class="nav-bar">
+    <ul>
+      <li>
+        <ul>
+          <li><input type="checkbox" ng-model="addImage"><h2>Add Image</h2></li>
+          <li ng-show="addImage">
+            <image-add images="$ctrl.images"></image-add>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><input type="checkbox" ng-model="addAlbum"><h2>Add Album</h2></li>
+          <li ng-show="addAlbum">
+            <album-add albums="$ctrl.albums"></album-add>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><input type="checkbox" ng-model="deleteImage"><h2>Delete Image</h2></li>
+          <li ng-show="deleteImage">
+            <image-delete images="$ctrl.images"></image-delete>
+          </li>
+        </ul>
+      <li>
+        <ul>
+          <li><input type="checkbox" ng-model="deleteAlbum"></li>
+          <li ng-show="deleteAlbum">
+            <album-delete albums="$ctrl.albums"></album-delete>
+          </li>
+        </ul>
+    </ul>
+  </div>
+  <album-choice albums="$ctrl.albums"></album-choice>
+  <image-choice images="$ctrl.images"></image-choice>
+</section>

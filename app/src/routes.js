@@ -9,7 +9,7 @@ export default function routes($stateProvider, $urlRouterProvider) {
   .state({
     name: 'images',
     url: '/images',
-    component: 'image'
+    component: 'images'
   })
   .state({
     name: 'about',
