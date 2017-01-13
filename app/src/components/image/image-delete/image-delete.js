@@ -1,5 +1,4 @@
 import template from './image-delete.html';
-import styles from './image-delete.scss';
 
 export default {
   template, 
@@ -12,8 +11,6 @@ export default {
 controller.$inject = ['imageService'];
 
 function controller (imageService) {
-
-  this.styles = styles;
 
   this.trash = (image) => {
     imageService.remove(image)
